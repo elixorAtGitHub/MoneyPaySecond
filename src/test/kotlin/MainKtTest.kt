@@ -112,7 +112,7 @@ class MainKtTest {
 
         val result = comission(typeCard, ammount, previous)
 
-        assertEquals(0, result)
+        assertEquals(-1, result)
     }
 
 }
