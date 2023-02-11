@@ -9,8 +9,8 @@ const val ERROR_TYPE = -1
 const val ERROR_LIMIT = -2
 
 fun main() {
-    val transactionAmmount = 10000
-    val previousTransactions = 60000
+    val transactionAmmount = 40_000
+    val previousTransactions = 100_000
     val text1 = "Если ранее в течении месяца отправлялось через "
     val text2 = " " + (previousTransactions).toString() + ", то комиссия для $transactionAmmount составит "
     println(text1 + TYPE_VISA + text2 + comission(TYPE_VISA, transactionAmmount, previousTransactions))
